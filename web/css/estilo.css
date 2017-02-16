@@ -8,27 +8,52 @@
     /* Centrar el div */
     right: 0;
     left: 0;
+    top: 0;
     margin-right: auto;
     margin-left: auto;
     /* Tamaño del header */
-    min-height: 50px;
-    width: 95%;
-   	background: #ffeebb;
-   
-
+    min-height: 100px;
+    width: 100%;  
+   	background-image: url("../images/fondocabecera.png");   	
+    background-repeat: no-repeat;  
+    opacity: 0.85;  
 }
 
 #main {
-	min-height: 900px;
+	min-height: 738px;
 	margin: 0px;
 	padding: 0px;	 
 	text-align: center;
 }
 
+
+video#bgvid {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: url(../images/imagenfondo.jpg) no-repeat;
+	background-size: cover;	
+}
+
+#formulario {
+	position: absolute;
+	top: 200;
+	right: 330;
+	width: 250px;
+	height: 400px;
+	background: #ffeebb;
+	opacity: 0.80;  
+}
+
  #footer {
    display: block;
-   margin: 4px;
-   padding: 5px;
+   width: 100%;
    min-height: 60px;
    border: 1px solid #eebb55;   
    background: #ffeebb;
