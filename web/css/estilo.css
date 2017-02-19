@@ -53,12 +53,22 @@ video#bgvid {
 	right: 330;
 	width: 250px;
 	height: 400px;
-	background: #ffeebb;
-	opacity: 0.80;  
+	background: #f17f43;
+	opacity: 0.90;
+	padding: 10px;
+	border-radius: 20px;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;	
+}
+#formulario:hover{
+    box-shadow: 0px 0px 10px #0d3d56;
+	opacity: 1;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;	
 }
 
  #footer {
-   display: block;
+   display: block; 
    width: 100%;
    min-height: 60px;
    border: 1px solid #eebb55;   
