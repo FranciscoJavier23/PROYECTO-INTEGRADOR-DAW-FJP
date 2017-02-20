@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.ttf');
+}
+
 #content{
 	text-align: center;
 }
@@ -45,6 +50,30 @@ video#bgvid {
 	transform: translateX(-50%) translateY(-50%);
 	background: url(../images/imagenfondo.jpg) no-repeat;
 	background-size: cover;	
+}
+
+#textoinicio{
+	position: absolute;
+	top: 210;
+	left: 150;
+	width: 550px;
+	height: 400px;	
+	color: white;	
+		 
+}
+
+#slogan{
+	font-family:Impact, Charcoal, sans-serif;
+	font-size: 50px;
+	text-shadow: 0px 0px 8px #2a3036;
+}
+
+#info{
+	font-family:Raleway;
+	margin-top: 20px;
+	font-size: 18px;
+	text-shadow: 0px 0px 8px #2a3036;
+	text-align: justify;
 }
 
 #formulario {
