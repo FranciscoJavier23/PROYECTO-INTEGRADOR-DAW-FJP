@@ -39,6 +39,15 @@
 	left: 40px;	 
 }
 
+#header>button{
+	position: relative;
+	float: right;
+	right: 100px;
+	top: 20px;
+	width: 120px;
+	
+}
+
 #main {
 	min-height: 738px;
 	margin: 0px;
@@ -116,7 +125,7 @@ video#bgvid {
 	font-family:Raleway;
 	position: relative;
 	width: 100%;
-	height: 550px;
+	height: 580px;
 	background-color: #F3F3F3;	
 }
 
@@ -174,10 +183,28 @@ video#bgvid {
 	opacity: 0.8;*/
 }
 
- #footer {
+ #foote {
    display: block; 
    width: 100%;
    min-height: 150px;   
    background: #163848;
    text-align: center;
 }
+
+#redes{
+	padding-top: 10px;
+	color: white;
+	text-shadow: 0px 0px 8px #2a3036;
+	font-family:Raleway;
+	font-size: 15px;
+}
+
+.logoredes {
+	text-align: center;
+	display: inline-block;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+
+
