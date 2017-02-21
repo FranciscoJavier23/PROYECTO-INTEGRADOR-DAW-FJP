@@ -1,0 +1,55 @@
+@font-face{
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.ttf');
+}
+
+#content{
+	text-align: center;
+	background-color: #F3F3F3;
+}
+
+#header {   
+	/*Posicion fija en la página*/
+   	position: absolute; 
+    /* Centrar el div */
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* Tamaño del header */
+    min-height: 150px;
+    width: 100%;  
+   	background-image: url("../images/fondocabecera.png");   	
+    background-repeat: no-repeat;     	
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
+	z-index: 1;
+	background-color: #F3F3F3;
+}
+
+#logo{
+	position: absolute;
+	top: 1px;
+	left: 40px;	 
+}
+
+#formulario {
+	position: relative;
+	margin: 0 auto;
+	margin-top:150px;
+	text-align: center;	
+	width: 400px;
+	height: 600px;
+	background: #f17f43;
+	opacity: 0.90;
+	padding: 10px;
+	border-radius: 20px;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;	
+}
+
+
+
+
+
