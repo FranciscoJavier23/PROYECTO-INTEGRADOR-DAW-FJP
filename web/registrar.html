@@ -2,13 +2,13 @@
 	<head>
 		<title>Registro</title>
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+		<!-- CSS Principal -->
+		<link rel="stylesheet" href="css/estiloformulario.css" />	
 		<!-- CSS y scripts para el formulario -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- El atributo integrity es para que el navegador no carge el fichero si ha sido manipulado -->		
-		<!-- CSS Principal -->
-		<link rel="stylesheet" href="css/estiloformulario.css" />	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- El atributo integrity es para que el navegador no carge el fichero si ha sido manipulado -->				
 	</head>
 	
 	<body>
@@ -20,21 +20,97 @@
 					</a>
 				</div>		
 			</div>
-					
 			<div id="formulario">
-				<div class="bs-example">
-					<form>
-						<div class="form-group">
-							<label for="usuario">Nickname</label>
-							<input type="text" class="form-control" id="nickname" placeholder="Nickname">
-						</div>
-						<div class="form-group">
-							<label for="usuario">Nombre</label>
-							<input type="text" class="form-control" id="nombre" placeholder="Nombre">
-						</div>
-					</form>
+				<div id="formulario1">
+					<div class="bs-example">
+						<form>
+							<div class="form-group">
+								<label for="nickname">Nickname</label>
+								<input type="text" class="form-control" id="nickname" placeholder="Nickname">
+							</div>
+							<div class="form-group">
+								<label for="nombre">Nombre</label>
+								<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+							</div>
+							<div class="form-group">
+								<label for="correo">Correo</label>
+								<input type="email" class="form-control" id="correo" placeholder="Correo">
+							</div>
+							<div class="form-group">
+								<label for="inputPassword">Password</label>
+								<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="estatura">Estatura</label>
+								<input type="number" class="form-control" id="estatura" placeholder="Estatura">
+							</div>
+							<div class="form-group">
+								<label for="peso">Peso</label>
+								<input type="number" class="form-control" id="peso" placeholder="Peso">
+							</div>
+						</form>
+					</div>
 				</div>
-			</div>				
+				<div id="formulario2">
+					<h4>Tipo de corredor</h4>
+					<div>
+						<div>
+						  <input type="radio" name="tipo-corredor" id="corredor-casual" required>
+						  <label for="corredor-casual">Corredor casual</label>						
+						</div>
+						
+						<div>
+							<input type="radio" name="tipo-corredor" id="corredor-mediofondo">
+							<label for="corredor-mediofondo">Corredor de medio fondo</label>
+						
+							<div class="oculto">								
+								<div class="form-group">
+									<label for="marca5">Marca en 5km</label>
+									<input type="text" class="require-if-active" id="marca5" name="marca5" placeholder="Marca en 5km">
+								</div>
+								<div class="form-group">
+									<label for="marca10">Marca en 10km</label>
+									<input type="text" class="require-if-active" id="marca10" name="marca10" placeholder="Marca en 10km">
+								</div>
+								<div class="form-group">
+									<label for="marcaMedia">Marca en media maraton</label>
+									<input type="text" class="require-if-active" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<input type="radio" name="tipo-corredor" id="choice-animals-cats">
+							<label for="choice-animals-cats">Corredor fondo</label>
+						
+							<div class="oculto">
+								<div class="form-group">
+									<label for="marcaMedia">Marca en media maraton</label>
+									<input type="text" class="require-if-active" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+								</div>
+								<div class="form-group">
+									<label for="marcaMaraton">Marca en maraton</label>
+									<input type="text" class="require-if-active" id="marcaMaraton" name="marcaMaraton" placeholder="Marca en maraton">
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<input type="radio" name="tipo-corredor" id="choice-animals-cats">
+							<label for="choice-animals-cats">Corredor de trail</label>
+						
+							<div class="oculto">
+								<label for="which-cat">Why? Cats are weird. Respond.</label>
+								<input type="text" id="which-cat" name="which-cat" class="require-if-active" data-require-pair="#choice-animals-cats">
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+				</div>
 		</div>
 	</body>
 </html>
