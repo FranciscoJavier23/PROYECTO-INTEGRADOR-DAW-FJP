@@ -3,6 +3,10 @@
 	src: url('../fonts/Raleway-Bold.ttf');
 }
 
+body {
+	background-color: #F3F3F3 !important;
+}
+
 #content{
 	text-align: center;
 	background-color: #F3F3F3;
@@ -35,24 +39,25 @@
 }
 
 #formulario {
-	position: relative;
-	top: 180px;
+	display: flex;
+    justify-content: center;
+	margin-top: 160px;	
+	margin-left: 50px;
 }
 
 #formulario1 {
-	display: inline-block;
-	width: 300px;
-	height: 580px;
+	width: 400px;
+	height: 500px;
 	text-align: center;
 	padding-right: 40px;
+	padding-left: 60px;
 }
 
 #formulario2{
-	display: inline-block;
-	width: 450px;
-	height: 580px;
+	width: 520px;
+	height: 500px;
 	text-align: left;
-	padding-left: 40px;
+	padding-left: 80px;
 }
 
 .form-control {
@@ -60,20 +65,46 @@
 	height: 34px !important;
 }
 
+.form-control:focus {
+    border-color: #f17f43 !important;
+}
+
 .oculto { /* Por defecto este div está oculto*/
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
 }
 
 input[type="radio"]:checked ~ .oculto { /* Cuando hay un radio activado se muestra el div de ese nivel*/
-  opacity: 1;
-  max-height: 160px;
-  padding: 10px 20px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  overflow: visible;
+	opacity: 1;
+	max-height: 160px;
+	padding: 10px 20px;
+	-webkit-transform: scale(1);
+    transform: scale(1);
+	overflow: visible;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
 }
 
+.oculto.form-group>input{
+	text-align: right !important;
+}
+
+#foote {
+   display: block; 
+   width: 100%;
+   min-height: 30px;   
+   background: #163848;
+   text-align: center;
+   margin-top: 45px;
+
+}
+
+#copyright {
+	position: relative;
+	color: white;
+	}
 
 

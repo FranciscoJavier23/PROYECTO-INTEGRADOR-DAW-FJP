@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Registro</title>
+		<meta charset="utf-8">	
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" />
 		<!-- CSS Principal -->
 		<link rel="stylesheet" href="css/estiloformulario.css" />	
@@ -52,7 +53,7 @@
 					</div>
 				</div>
 				<div id="formulario2">
-					<h4>Tipo de corredor</h4>
+					<h3>Tipo de corredor</h3>
 					<div>
 						<div>
 						  <input type="radio" name="tipo-corredor" id="corredor-casual" required>
@@ -66,51 +67,70 @@
 							<div class="oculto">								
 								<div class="form-group">
 									<label for="marca5">Marca en 5km</label>
-									<input type="text" class="require-if-active" id="marca5" name="marca5" placeholder="Marca en 5km">
+									<input type="time" id="marca5" name="marca5" placeholder="Marca en 5km" align="right">
 								</div>
 								<div class="form-group">
 									<label for="marca10">Marca en 10km</label>
-									<input type="text" class="require-if-active" id="marca10" name="marca10" placeholder="Marca en 10km">
+									<input type="time" id="marca10" name="marca10" placeholder="Marca en 10km" align="right">
 								</div>
 								<div class="form-group">
 									<label for="marcaMedia">Marca en media maraton</label>
-									<input type="text" class="require-if-active" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+									<input type="time" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
 								</div>
 							</div>
 						</div>
 						
 						<div>
-							<input type="radio" name="tipo-corredor" id="choice-animals-cats">
-							<label for="choice-animals-cats">Corredor fondo</label>
+							<input type="radio" name="tipo-corredor" id="corredor-fondo">
+							<label for="corredor-fondo">Corredor fondo</label>
 						
 							<div class="oculto">
 								<div class="form-group">
 									<label for="marcaMedia">Marca en media maraton</label>
-									<input type="text" class="require-if-active" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+									<input type="text" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
 								</div>
 								<div class="form-group">
 									<label for="marcaMaraton">Marca en maraton</label>
-									<input type="text" class="require-if-active" id="marcaMaraton" name="marcaMaraton" placeholder="Marca en maraton">
+									<input type="text" id="marcaMaraton" name="marcaMaraton" placeholder="Marca en maraton">
 								</div>
 							</div>
 						</div>
 						
 						<div>
-							<input type="radio" name="tipo-corredor" id="choice-animals-cats">
-							<label for="choice-animals-cats">Corredor de trail</label>
+							<input type="radio" name="tipo-corredor" id="corredor-trail">
+							<label for="corredor-trail">Corredor de trail</label>
 						
 							<div class="oculto">
-								<label for="which-cat">Why? Cats are weird. Respond.</label>
-								<input type="text" id="which-cat" name="which-cat" class="require-if-active" data-require-pair="#choice-animals-cats">
+								<h4>Carrera mas larga:</h4>
+								<div class="form-group">
+									<label for="nombreCarrera">Nombre carrera</label>
+									<input type="text" id="nombreCarrera" name="nombreCarrera" placeholder="Nombre carrera">
+								</div>
+								<div class="form-group">
+									<label for="distancia">Distancia</label>
+									<input type="number" id="distancia" name="distancia" placeholder="Distancia">
+								</div>
+								<div class="form-group">
+									<label for="desnivel">Desnivel</label>
+									<input type="number" id="desnivel" name="desnivel" placeholder="Desnivel">
+								</div>
+								<div class="form-group">
+									<label for="distancia">Tiempo</label>
+									<input type="time" id="tiempo" name="tiempo" placeholder="Tiempo">
+								</div>
+							
 							</div>
 						</div>
-					</div>
-					
-					
-					
-					
-					
-				</div>
+					</div>					
+				</div>				
+		</div>
+		<div id="boton">
+			<button type="submit" class="btn btn-primary" id="registrar">Registrar</button>
+		</div>
+		<div id="foote">				
+			<div id="copyright">					
+				© Febrero 2017 FranJa running. Todos los derechos reservados.
+			</div>
 		</div>
 	</body>
 </html>
