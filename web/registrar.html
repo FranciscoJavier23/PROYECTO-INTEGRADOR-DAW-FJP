@@ -10,6 +10,11 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- El atributo integrity es para que el navegador no carge el fichero si ha sido manipulado -->				
+		<!-- Script barra slider -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.js"></script><meta name="googlebot" content="noindex, nofollow">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.js"></script>
+		<<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/cupertino/jquery-ui.css"> <!-- Sin él no se ve el slider -->		
+		<script type="text/javascript" src="script/slider.js"></script>	 <!-- Script donde se declara el slider -->			
 	</head>
 	
 	<body>
@@ -52,7 +57,57 @@
 						</form>
 					</div>
 				</div>
+				
 				<div id="formulario2">
+					<h3>Zonas de frecuencia cardíaca</h3>
+					<div class="titulo_slider">
+						Sencillo
+					</div>
+					<div class="barra_slider">
+						<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 35%; width: 30%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 35%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 65%;"></a></div>
+						<div id="min" style="position: relative; top: 12.9167px; left: 170px;"></div>
+						<div id="max" style="position: relative; top: -7.08333px; left: 320px;"></div>
+					</div>
+					<div class="titulo_slider">
+						Fitness
+					</div>
+					<div class="barra_slider">
+						<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 35%; width: 30%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 35%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 65%;"></a></div>
+						<div id="min" style="position: relative; top: 12.9167px; left: 170px;"></div>
+						<div id="max" style="position: relative; top: -7.08333px; left: 320px;"></div>
+					</div>
+					<div class="titulo_slider">
+						Cardio
+					</div>
+					<div class="barra_slider">
+						<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 35%; width: 30%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 35%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 65%;"></a></div>
+						<div id="min" style="position: relative; top: 12.9167px; left: 170px;"></div>
+						<div id="max" style="position: relative; top: -7.08333px; left: 320px;"></div>
+					</div>
+					<div class="titulo_slider">
+						Velocidad
+					</div>
+					<div class="barra_slider">
+						<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 35%; width: 30%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 35%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 65%;"></a></div>
+						<div id="min" style="position: relative; top: 12.9167px; left: 170px;"></div>
+						<div id="max" style="position: relative; top: -7.08333px; left: 320px;"></div>
+					</div>
+					<div class="titulo_slider">
+						Spring
+					</div>
+					<div class="barra_slider">
+						<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 35%; width: 30%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 35%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 65%;"></a></div>
+						<div id="min" style="position: relative; top: 12.9167px; left: 170px;"></div>
+						<div id="max" style="position: relative; top: -7.08333px; left: 320px;"></div>
+					</div>
+					
+					
+					
+					  
+					
+				</div>
+				
+				<div id="formulario3">
 					<h3>Tipo de corredor</h3>
 					<div>
 						<div>
@@ -64,19 +119,27 @@
 							<input type="radio" name="tipo-corredor" id="corredor-mediofondo">
 							<label for="corredor-mediofondo">Corredor de medio fondo</label>
 						
-							<div class="oculto">								
+							<div class="oculto">
+							<table>
+								<tr>
 								<div class="form-group">
-									<label for="marca5">Marca en 5km</label>
-									<input type="time" id="marca5" name="marca5" placeholder="Marca en 5km" align="right">
+									<td><label for="marca5">Marca en 5km</label></td>
+									<td><input type="time" id="marca5" name="marca5" placeholder="Marca en 5km" align="right"></td>
 								</div>
+								</tr>
+								<tr>
 								<div class="form-group">
-									<label for="marca10">Marca en 10km</label>
-									<input type="time" id="marca10" name="marca10" placeholder="Marca en 10km" align="right">
+									<td><label for="marca10">Marca en 10km</label></td>
+									<td><input type="time" id="marca10" name="marca10" placeholder="Marca en 10km" align="right"></td>
 								</div>
+								</tr>
+								<tr>
 								<div class="form-group">
-									<label for="marcaMedia">Marca en media maraton</label>
-									<input type="time" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+									<td><label for="marcaMedia">Marca en media maraton</label></td>
+									<td><input type="time" id="marcaMedia" name="marcaMedia" placeholder="Marca media maraton"></td>
 								</div>
+								</tr>
+							</table>
 							</div>
 						</div>
 						
@@ -85,14 +148,20 @@
 							<label for="corredor-fondo">Corredor fondo</label>
 						
 							<div class="oculto">
+							<table>
+								<tr>
 								<div class="form-group">
-									<label for="marcaMedia">Marca en media maraton</label>
-									<input type="text" id="marcaMedia" name="marcaMedia" placeholder="Marca en media maraton">
+									<td><label for="marcaMedia">Marca en media maraton</label></td>
+									<td><input type="text" id="marcaMedia" name="marcaMedia" placeholder="Marca media maraton"></td>
 								</div>
+								</tr>
+								<tr>
 								<div class="form-group">
-									<label for="marcaMaraton">Marca en maraton</label>
-									<input type="text" id="marcaMaraton" name="marcaMaraton" placeholder="Marca en maraton">
+									<td><label for="marcaMaraton">Marca en maraton</label></td>
+									<td><input type="text" id="marcaMaraton" name="marcaMaraton" placeholder="Marca en maraton"></td>
 								</div>
+								</tr>
+							</table>
 							</div>
 						</div>
 						
@@ -100,29 +169,40 @@
 							<input type="radio" name="tipo-corredor" id="corredor-trail">
 							<label for="corredor-trail">Corredor de trail</label>
 						
-							<div class="oculto">
+							<div class="oculto">							
 								<h4>Carrera mas larga:</h4>
-								<div class="form-group">
-									<label for="nombreCarrera">Nombre carrera</label>
-									<input type="text" id="nombreCarrera" name="nombreCarrera" placeholder="Nombre carrera">
-								</div>
-								<div class="form-group">
-									<label for="distancia">Distancia</label>
-									<input type="number" id="distancia" name="distancia" placeholder="Distancia">
-								</div>
-								<div class="form-group">
-									<label for="desnivel">Desnivel</label>
-									<input type="number" id="desnivel" name="desnivel" placeholder="Desnivel">
-								</div>
-								<div class="form-group">
-									<label for="distancia">Tiempo</label>
-									<input type="time" id="tiempo" name="tiempo" placeholder="Tiempo">
-								</div>
+								<table>
+									<tr>
+									<div class="form-group">
+										<td><label for="nombreCarrera">Nombre carrera</label></td>
+										<td><input type="text" id="nombreCarrera" name="nombreCarrera" placeholder="Nombre carrera"></td>
+									</div>
+									</tr>
+									<tr>
+									<div class="form-group">
+										<td><label for="distancia">Distancia</label></td>
+										<td><input type="number" id="distancia" name="distancia" placeholder="Distancia"></td>
+									</div>
+									</tr>
+									<tr>
+									<div class="form-group">
+										<td><label for="desnivel">Desnivel</label></td>
+										<td><input type="number" id="desnivel" name="desnivel" placeholder="Desnivel"></td>
+									</div>
+									</tr>
+									<tr>
+									<div class="form-group">
+										<td><label for="distancia">Tiempo</label></td>
+										<td><input type="time" id="tiempo" name="tiempo" placeholder="Tiempo"></td>
+									</div>
+									</tr>
+								</table>
 							
 							</div>
 						</div>
 					</div>					
-				</div>				
+				</div>
+				
 		</div>
 		<div id="boton">
 			<button type="submit" class="btn btn-primary" id="registrar">Registrar</button>
