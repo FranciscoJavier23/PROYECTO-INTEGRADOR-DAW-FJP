@@ -60,9 +60,10 @@ body {
 	text-align: center;
 }
 
-#slider {
+#slider, #slider2, #slider3, #slider4, #slider5 {
 	width: 80%;
-	margin-left: 1em;
+	margin:0 auto;
+	text-align: center;
 }
 
 #min, #max {
@@ -73,6 +74,7 @@ body {
 .titulo_slider{
 	font-size: 15px;
 	margin-bottom: 10px;
+	font-weight: bold;
 }
 
 #formulario3{
