@@ -38,6 +38,35 @@ body {
 	left: 40px;	 
 }
 
+#calendario {
+	position: absolute;
+	top: 230;
+	left: 110;
+	width: 470px;
+	height: 350px;	
+	background-color: red;
+	opacity: 0.5;
+}
+
+#entrenamientos {
+	position: absolute;
+	top: 170;
+	right: 110;
+	width: 600px;
+	height: 120px;	
+	background-color: green;
+	opacity: 0.5;
+}
+
+#mapas {
+	position: absolute;
+	top: 330;
+	right: 110;
+	width: 600px;
+	height: 350px;	
+	background-color: blue;
+	opacity: 0.5;
+}
 
 #foote {
    display: block; 
@@ -46,7 +75,8 @@ body {
    background: #163848;
    text-align: center;
    margin-top: 45px;
-
+	position: absolute;
+	bottom: 0px;
 }
 
 #copyright {
