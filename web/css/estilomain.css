@@ -41,18 +41,17 @@ body {
 #calendario {
 	position: absolute;
 	top: 230;
-	left: 110;
+	left: 130;
 	width: 470px;
 	height: 350px;	
-	background-color: red;
-	opacity: 0.5;
+	background-color: #F3F3F3;
 }
 
 #entrenamientos {
 	position: absolute;
 	top: 170;
-	right: 110;
-	width: 600px;
+	right: 130;
+	width: 610px;
 	height: 120px;	
 	background-color: green;
 	opacity: 0.5;
@@ -60,23 +59,24 @@ body {
 
 #mapas {
 	position: absolute;
-	top: 330;
-	right: 110;
-	width: 600px;
-	height: 350px;	
-	background-color: blue;
-	opacity: 0.5;
+	top: 320;
+	right: 130;
+	width: 610px;
+	height: 360px;	
+	
 }
 
+
 #foote {
-   display: block; 
-   width: 100%;
-   min-height: 30px;   
-   background: #163848;
-   text-align: center;
-   margin-top: 45px;
+	display: block; 
+	width: 100%;
+	min-height: 30px;   
+	background: #163848;
+	text-align: center;
+	margin-top: 45px;
 	position: absolute;
 	bottom: 0px;
+	left: 0px;
 }
 
 #copyright {
