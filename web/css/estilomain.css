@@ -53,8 +53,18 @@ body {
 	right: 130;
 	width: 610px;
 	height: 120px;	
-	background-color: green;
-	opacity: 0.5;
+}
+
+table{
+	text-align: left;
+	border: 1px solid grey;
+	width: 100%;
+	font-family:Raleway;
+}
+
+table>caption{
+	font-size: 20px;
+	padding-bottom: 10px;
 }
 
 #mapas {
@@ -63,9 +73,7 @@ body {
 	right: 130;
 	width: 610px;
 	height: 360px;	
-	
 }
-
 
 #foote {
 	display: block; 
