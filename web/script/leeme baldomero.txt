@@ -1,0 +1,4 @@
+Este proyecto tiene solo parte visual. Aunque contiene parte de javascript en el formulario de registro, ya
+que me tocó crear un script para hacer un slider de doble rango y un script para hacer scroll. Se puede ver 
+en la página index.html haciendo clic en el boton "descubrenos" y en la página registrar.html. Los script
+se encuentran en la carpeta script
